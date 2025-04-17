@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapılacaklar Listesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Tema butonu -->
+    <button id="theme-toggle" class="theme-btn">🌙</button>
+
+    <!-- Yapılacaklar listesi -->
+    <div class="container">
+        <h1> To-Do List</h1>
+        <input type="text" id="todo-input" placeholder="Write something to do...">
+        <button id="add-btn">Add</button>
+
+
+        <ul id="todo-list">
+            <!-- To-Do öğeleri burada listelenecek -->
+        </ul>
+    </div>
+
+    <!-- Sağdaki çerçeve alanı -->
+    <div id="right-side">
+        <div id="message" style="display: none;">Perform or delete previous tasks</div>
+        <div id="frames-container">
+            <!-- Çerçeveler burada olacak -->
+        </div>
+    </div>
+
+    <!-- Başarı ve Başarısız yazıları -->
+    <div id="status">
+        <p>Successful: <span id="successful-count">0</span></p>
+        <p>Unsuccessful: <span id="failed-count">0</span></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('wallpaper for your laptop.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.theme-btn:hover {
+    background-color: #444;
+}
+
+.container {
+    background-color: rgba(211, 211, 211, 0.8);
+    /* Hafif opak gri arka plan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    height: 450px;
+    position: fixed;
+    top: 100px;
+    left: 300px;
+    overflow-y: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+body.dark-mode .container h1 {
+    color: #F1C6D3;
+    /* Toz pembe renk */
+}
+
+body.dark-mode .container {
+    background-color: #444;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+body.dark-mode button {
+    background-color: #f44336;
+}
+
+#right-side {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    width: 500px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.frame {
+    width: 300px;
+    height: 150px;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    color: black;
+    cursor: pointer;
+    position: relative;
+}
+
+body.dark-mode .frame {
+    background-color: #444;
+    border: 2px solid #F1C6D3;
+    color: white;
+}
+
+.frame:hover {
+    background-color: #ddd;
+}
+
+.frame-options {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    display: none;
+    width: 90%;
+    justify-content: space-between;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.frame:hover .frame-options {
+    display: flex;
+}
+
+button.option-btn {
+    padding: 5px;
+    width: 45%;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button.option-btn.green {
+    background-color: green;
+    color: white;
+}
+
+button.option-btn.red {
+    background-color: red;
+    color: white;
+}
+
+#status {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 22px;
+    color: #ff00c8;
+}
+
+body.dark-mode #successful-count {
+    color: #4CAF50;
+}
+
+body.dark-mode #failed-count {
+    color: #f44336;
+}
+
+#successful-count {
+    color: #4CAF50;
+}
+
+#failed-count {
+    color: #f44336;
+}
+
+body.dark-mode #successful-count,
+body.dark-mode #failed-count {
+    font-size: 16px;
+}
+
+.container {
+    width: 350px;
+    height: 450px;
+}
+
+#right-side {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    width: 500px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.button-container {
+    position: fixed;
+    bottom: 100px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button.success-btn,
+button.fail-btn {
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button.success-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+button.success-btn:hover {
+    background-color: #45a049;
+}
+
+button.fail-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+button.fail-btn:hover {
+    background-color: #e53935;
+}
+
+body.dark-mode button.success-btn {
+    background-color: #4CAF50;
+}
+
+body.dark-mode button.fail-btn {
+    background-color: #f44336;
+}
+
+.container input[type="text"] {
+    font-size: 18px;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
